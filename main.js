@@ -79,6 +79,11 @@ function render() {
 
     //Target
     ctx.drawImage(images[target_id], 615, 10, 200, 200);
+
+    //Score
+    ctx.fillStyle = color(0, 0, 0);
+    ctx.font = "32px Arial";
+    ctx.fillText("Score: " + round, 630, 250);
 }
 
 function onclick(e) {
